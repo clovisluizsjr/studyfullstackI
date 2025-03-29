@@ -1,9 +1,10 @@
 const express = require("express");
 const Controller = require("../controllers/controller");
+
 const rotas = express.Router();
 
-let page = new Controller();
+let pagina = new Controller();
 
-rotas.get('/page', page.PaginaDeTeste);
+rotas.get('/', pagina.PaginaDeTeste);
 
 module.exports = rotas;
